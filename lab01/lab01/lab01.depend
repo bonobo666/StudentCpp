@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1537985802 source:c:\studentcpp\lab01\lab01\main.cpp
+	<windows.h>
+	<iostream>
+	<cmath>
+
