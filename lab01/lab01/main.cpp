@@ -2,6 +2,14 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
+void check(double &x){
+        {
+            cout<<"Данные некорректны. Попробуйте снова. \n";
+            cin.clear();
+            cin.ignore(1024,'\n');
+            cin>>x;
+        };
+        };
 int main()
 {
 SetConsoleCP(1251);
@@ -15,22 +23,12 @@ char d;
 cout<<"Введите два числа:"<<endl;
 cout<<"Число 1: ";
 cin>>a;
- while(cin.fail())
-        {
-            cout<<"Данные некорректны. Попробуйте снова. \n";
-            cin.clear();
-            cin.ignore(1024,'\n');
-            cin>>a;
-        };
+while (cin.fail()){
+check(a);};
 cout<<"Число 2: ";
 cin>>b;
- while(cin.fail())
-        {
-            cout<<"Данные некорректны. Попробуйте снова. \n";
-            cin.clear();
-            cin.ignore(1024,'\n');
-            cin>>b;
-        };
+while (cin.fail()){
+check(b);}
 cout<<"Что сделать с числами?\n 1.+\n 2.-\n 3.*\n 4./\n 5.^2\n 6.sqrt\n 7.logn\n"<<endl;
 cout<<"Ваш ответ: ";
 cin>>c;
