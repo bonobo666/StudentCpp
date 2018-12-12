@@ -78,9 +78,6 @@ cout<<"Продолжить выполнение программы(y/n)? ";
 cin>>d;
 if(d=='n'){
 break;}
-else if(d=='y'){
-cout<<"";
-}
 }
 return 0;
 }

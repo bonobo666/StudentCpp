@@ -9,19 +9,22 @@ int main()
     int num[100];
     int i,u;
 for(i=0;i<100;i++){
-    whhh:
     for(u=0;u<10;u++){
     in[u]={0};
     };
     cin>>in;
     if((in[0]=='e')&&(in[1]=='n')&&(in[2]=='d')&&(in[3]=='\0')){break;};
     for(u=0;u<strlen(in);u++){
-        if(!(in[u]=='0'||in[u]=='1'||in[u]=='2'||in[u]=='3'||in[u]=='4'||in[u]=='5'||in[u]=='6'||in[u]=='7'||in[u]=='8'||in[u]=='9')){
+        while(!((in[u]>='0')&&(in[u]<='9'))){
+
             cout<<"Error! Invalid value. Try again if you dare, mortal!\n";
-            goto whhh;
+            for(u=0;u<10;u++){
+            in[u]={0};
+            };
+    cin>>in;
         }
     }
-    num[i]=atoi(&in[0]);
+    num[i]=atoi(in);
 };
 char *op=new char[i-2];
 int res=num[0];
