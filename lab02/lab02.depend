@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1544598132 source:c:\studentcpp\lab02\main.cpp
+1544600334 source:c:\studentcpp\lab02\main.cpp
 	<iostream>
 	<cstdlib>
 	<cstring>

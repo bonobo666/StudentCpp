@@ -15,13 +15,13 @@ for(i=0;i<100;i++){
     cin>>in;
     if((in[0]=='e')&&(in[1]=='n')&&(in[2]=='d')&&(in[3]=='\0')){break;};
     for(u=0;u<strlen(in);u++){
-        while(!((in[u]>='0')&&(in[u]<='9'))){
-
+         if(!(in[u]>='0')&&!(in[u]<='9')){
             cout<<"Error! Invalid value. Try again if you dare, mortal!\n";
-            for(u=0;u<10;u++){
+            for(int a=0;a<10;a++){
             in[u]={0};
+            break;
             };
-    cin>>in;
+            cin>>in;
         }
     }
     num[i]=atoi(in);
