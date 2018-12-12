@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1544527437 source:c:\studentcpp\lab02\main.cpp
+	<iostream>
+	<cstdlib>
+
