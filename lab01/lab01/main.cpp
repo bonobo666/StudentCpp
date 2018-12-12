@@ -3,12 +3,10 @@
 #include <cmath>
 using namespace std;
 void check(double &x){
-        {
             cout<<"Данные некорректны. Попробуйте снова. \n";
             cin.clear();
             cin.ignore(1024,'\n');
             cin>>x;
-        };
         };
 int main()
 {
