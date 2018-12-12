@@ -38,8 +38,8 @@ for(int oi=0;oi<i-1;oi++){              //oi!
     }
     switch(op[oi]){  //oi!!!
     case '+':{
-    res=res+num[oi+1];
-    break;  //oi!!!!
+    res=res+num[oi+1];  //oi!!!!
+    break;
     }
     case '-':{
     res=res-num[oi+1];  //oi!!!!!
