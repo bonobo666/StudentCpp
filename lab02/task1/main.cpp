@@ -17,7 +17,7 @@ for(i=0;i<100;i++){
     if((in[0]=='e')&&(in[1]=='n')&&(in[2]=='d')&&(in[3]=='\0'))
         {break;};
     for(u=0;u<strlen(in);u++){
-         if(!((in[u]=='0')||(in[u]=='1')||(in[u]=='2')||(in[u]=='3')||(in[u]=='4')||(in[u]=='5')||(in[u]=='6')||(in[u]=='7')||(in[u]=='8')||(in[u]=='9'))){
+         if(!((in[u]=='0')||(in[u]=='1')||(in[u]=='2')||(in[u]=='3')||(in[u]=='4')||(in[u]=='5')||(in[u]=='6')||(in[u]=='7')||(in[u]=='8')||(in[u]=='9')||(in[u]=='-'))){
             cout<<"Error! Invalid value. Try again if you dare, mortal!\n";
             for(int a=0;a<10;a++){
             in[u]={0};
