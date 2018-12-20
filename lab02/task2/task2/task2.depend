@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1545242078 source:c:\studentcpp\lab02\task2\task2\main.cpp
-	<iostream>
-	<cstdlib>
-	<cstring>
-
