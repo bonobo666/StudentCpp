@@ -1,11 +1,11 @@
-#include <windows.h>
+ï»¿#include <windows.h>
 #include <iostream>
 #include <cmath>
 using namespace std;
 void check(double &x){
     while (cin.fail())
         {
-        cout<<"Äàííûå íåêîððåêòíû. Ïîïðîáóéòå ñíîâà. \n";
+        cout<<"Ð”Ð°Ð½Ð½Ñ‹Ðµ Ð½ÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÑÐ½Ð¾Ð²Ð°. \n";
         cin.clear();
         cin.ignore(1024,'\n');
         cin>>x;
@@ -16,25 +16,25 @@ int main()
 setlocale(LC_ALL, "Russian");
 SetConsoleCP(1251);
 SetConsoleOutputCP(1251);
-cout<<"Çäðàâñòâóéòå! ";
+cout<<"Ð—Ð´Ñ€Ð°Ð²ÑÑ‚Ð²ÑƒÐ¹Ñ‚Ðµ! ";
 char d='y';
 while(d=='y')
     {
     double a,b,n,result1,result2=0;
     int c=0;
-    cout<<"Ââåäèòå äâà ÷èñëà:"<<endl;
-    cout<<"×èñëî 1: ";
+    cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð²Ð° Ñ‡Ð¸ÑÐ»Ð°:"<<endl;
+    cout<<"Ð§Ð¸ÑÐ»Ð¾ 1: ";
     cin>>a;
     check(a);
-    cout<<"×èñëî 2: ";
+    cout<<"Ð§Ð¸ÑÐ»Ð¾ 2: ";
     cin>>b;
     check(b);
-    cout<<"×òî ñäåëàòü ñ ÷èñëàìè?\n 1.+\n 2.-\n 3.*\n 4./\n 5.^2\n 6.sqrt\n 7.logn\n"<<endl;
-    cout<<"Âàø îòâåò: ";
+    cout<<"Ð§Ñ‚Ð¾ ÑÐ´ÐµÐ»Ð°Ñ‚ÑŒ Ñ Ñ‡Ð¸ÑÐ»Ð°Ð¼Ð¸?\n 1.+\n 2.-\n 3.*\n 4./\n 5.^2\n 6.sqrt\n 7.logn\n"<<endl;
+    cout<<"Ð’Ð°Ñˆ Ð¾Ñ‚Ð²ÐµÑ‚: ";
     cin>>c;
     while(cin.fail() || c>7 || c<1)
             {
-                cout<<"Äàííûå íåêîððåêòíû. Ïîïðîáóéòå ñíîâà. \n";
+                cout<<"Ð”Ð°Ð½Ð½Ñ‹Ðµ Ð½ÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÑÐ½Ð¾Ð²Ð°. \n";
                 cin.clear();
                 cin.ignore(1024,'\n');
                 cin>>c;
@@ -60,11 +60,11 @@ while(d=='y')
             result2=sqrt(b);
             break;
         case 7:
-            {cout<<"Îñíîâàíèå ëîãàðèôìà: ";
+            {cout<<"ÐžÑÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð»Ð¾Ð³Ð°Ñ€Ð¸Ñ„Ð¼Ð°: ";
             cin>>n;
             while(cin.fail()||b<=0||b==1)
             {
-                cout<<"Äàííûå íåêîððåêòíû. Ïîïðîáóéòå ñíîâà. \n";
+                cout<<"Ð”Ð°Ð½Ð½Ñ‹Ðµ Ð½ÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÑÐ½Ð¾Ð²Ð°. \n";
                 cin.clear();
                 cin.ignore(1024,'\n');
                 cin>>n;
@@ -73,14 +73,14 @@ while(d=='y')
             break;}
     };
     if(c>0&&c<5)
-        cout<<"Ðåçóëüòàò: "<<result1<<endl;
+        cout<<"Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚: "<<result1<<endl;
     else
-        cout<<"Ðåçóëüòàò 1: "<<result1<<"\nÐåçóëüòàò 2: "<<result2<<endl;
-    cout<<"Ïðîäîëæèòü âûïîëíåíèå ïðîãðàììû(y/n)? ";
+        cout<<"Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ 1: "<<result1<<"\nÐ ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ 2: "<<result2<<endl;
+    cout<<"ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹(y/n)? ";
     cin>>d;
     while(!(d=='n')&&!(d=='y'))
         {
-        cout<<"Íåâåðíîå çíà÷åíèå. Ïîïðîáóéòå ñíîâà:\n";
+        cout<<"ÐÐµÐ²ÐµÑ€Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÑÐ½Ð¾Ð²Ð°:\n";
         cin>>d;
         }
 }
